@@ -205,7 +205,6 @@ public class MapActivity extends AppCompatActivity
                 hasCoarseLocationPermission == PackageManager.PERMISSION_GRANTED   ) {
 
             // 2. 이미 퍼미션을 가지고 있다면
-            // ( 안드로이드 6.0 이하 버전은 런타임 퍼미션이 필요없기 때문에 이미 허용된 걸로 인식합니다.)
 
             startLocationUpdates(); // 3. 위치 업데이트 시작
 

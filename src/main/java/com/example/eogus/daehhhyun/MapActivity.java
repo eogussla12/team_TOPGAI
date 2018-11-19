@@ -50,6 +50,7 @@ public class MapActivity extends AppCompatActivity
 
     private GoogleMap mGoogleMap = null;
     private Marker currentMarker = null;
+    int a;
 
     private static final String TAG = "googlemap_example";
     private static final int GPS_ENABLE_REQUEST_CODE = 2001;

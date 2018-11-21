@@ -47,10 +47,8 @@ import java.util.Locale;
 public class MapActivity extends AppCompatActivity
         implements OnMapReadyCallback, ActivityCompat.OnRequestPermissionsResultCallback{
 
-
     private GoogleMap mGoogleMap = null;
     private Marker currentMarker = null;
-    int a;
 
     private static final String TAG = "googlemap_example";
     private static final int GPS_ENABLE_REQUEST_CODE = 2001;
@@ -76,7 +74,6 @@ public class MapActivity extends AppCompatActivity
 
 
     private View mLayout;  // Snackbar 사용하기 위해서는 View가 필요합니다.
-    // (참고로 Toast에서는 Context가 필요했습니다.)
 
 
     @Override
@@ -134,7 +131,6 @@ public class MapActivity extends AppCompatActivity
 
                 Log.d(TAG, "onLocationResult : " + markerSnippet);
 
-
                 //현재 위치에 마커 생성하고 이동
                 setCurrentLocation(location, markerTitle, markerSnippet);
 
@@ -145,8 +141,6 @@ public class MapActivity extends AppCompatActivity
         }
 
     };
-
-
 
     private void startLocationUpdates() {
 
